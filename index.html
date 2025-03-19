@@ -14,10 +14,10 @@
     <body>
         <header>
             <h1>🎲 Guess the Number 🎲</h1>
-            <p>Enter a number bellow. Get hints and try to win!</p>
+            <p>Enter a number bellow. <br />Get hints and try to win!</p>
         </header>
         <main>
-            <div class="game-container">
+            <div class="game-container" id="game-container">
                 <div class="difficulty">
                     <span>Select Difficulty:</span>
                     <select id="difficulty">
@@ -31,9 +31,7 @@
                     <button id="restart-btn">Restart</button>
                     <button id="guess-btn">Guess</button>
                 </div>
-                <div id="message">
-                    Try guessing a number between 1 and 100.🤐
-                </div>
+                <div id="message">Guess a number 🤐</div>
             </div>
         </main>
         <script type="module" src="./src/index.js"></script>

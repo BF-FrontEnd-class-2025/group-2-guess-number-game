@@ -7,7 +7,8 @@ const dom = {
     restartBtn: document.getElementById('restart-btn'),
     selectedLevel: document.getElementById('difficulty'),
     userInput: document.getElementById('guess-input'),
-    message: document.getElementById('message')
+    message: document.getElementById('message'),
+    container: document.getElementById('game-container')
 };
 
 //handlers
@@ -23,12 +24,16 @@ const handleGuess = () => {
     }
     const userGuess = Number(dom.userInput.value);
     const result = guessedNumber(rightNumber, userGuess);
-    dom.userInput.value = '';
     dom.message.innerText = result;
+
+    if (result === 'You won!') {
+        dom.container.classList.add('win');
+    }
 };
 
 const handleRestart = () => {
     rightNumber = 0;
+    dom.container.classList.remove('win');
     dom.selectedLevel.value = '100';
     dom.userInput.value = '';
     dom.message.innerText = "Let's play a new game!";
