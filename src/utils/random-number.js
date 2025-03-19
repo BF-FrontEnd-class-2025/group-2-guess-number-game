@@ -7,6 +7,4 @@
 
 export const randomNumber = (range = 50) => {
     return Math.floor(Math.random() * range) + 1;
- }
-
-
+};
