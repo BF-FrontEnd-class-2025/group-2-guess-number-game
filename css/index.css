@@ -7,6 +7,99 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #565454;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #e4f9fd;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 1em 0;
+}
+
+.game-container {
+    background: #b4dfff;
+    max-width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow:
+        rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 0.8em;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    color: #333;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #444;
+    max-width: 800px;
+}
+
+select {
+    padding: 0.5em;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+select:focus {
+    outline: none;
+}
+
+input {
+    height: 80px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #707070;
+    width: 120px;
+    border: 1px solid #aaa;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+button {
+    background: #86a1db;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5em;
+}
+
+button:hover {
+    background: #6a8dd8;
+}
+
+#message {
+    font-size: 18px;
+    color: #333;
+    margin: 1.5em 0;
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+#restart-btn {
+    background: #fc4d81;
+    margin-top: 10px;
+}
+
+#restart-btn:hover {
+    background: #fc3145;
 }
