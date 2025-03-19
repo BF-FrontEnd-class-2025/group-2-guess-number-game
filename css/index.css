@@ -23,7 +23,7 @@ header h1 {
 
 .game-container {
     background: #b4dfff;
-    max-width: 800px;
+    width: 100%;
     padding: 20px;
     margin: 50px auto;
     box-shadow:
@@ -34,14 +34,13 @@ header h1 {
 }
 
 h1 {
-    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-size: clamp(1.8rem, 4vw, 3rem);
     color: #333;
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #444;
-    max-width: 800px;
 }
 
 select {
@@ -102,4 +101,9 @@ button:hover {
 
 #restart-btn:hover {
     background: #fc3145;
+}
+
+.win {
+    background: url('https://plus.unsplash.com/premium_photo-1664304077938-d9f65c41583c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    object-fit: contain;
 }
