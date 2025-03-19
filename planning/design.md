@@ -14,4 +14,6 @@
 
 > Include your wireframe(s) and link to wireframe
 
+![wire-frame](./wireframe.png)
+
 <!-- provide a link to your wireframe documenting on Figma, or wherever it is -->
