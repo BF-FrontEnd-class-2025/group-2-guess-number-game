@@ -1,13 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/index.css" />
-        <title>JS starter</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>🎲 Guess the Number</title>
     </head>
     <body>
-        <script  src="./src/index.js"></script>
+        <header>
+            <h1>🎲 Guess the Number 🎲</h1>
+            <p>Enter a number bellow. Get hints and try to win!</p>
+        </header>
+        <main>
+            <div class="game-container">
+                <div class="difficulty">
+                    <span>Select Difficulty:</span>
+                    <select id="difficulty">
+                        <option value="50">Easy (1-50)</option>
+                        <option value="100" selected>Medium (1-100)</option>
+                        <option value="200">Hard (1-200)</option>
+                    </select>
+                </div>
+                <input type="number" id="guess-input" />
+                <div class="button-container">
+                    <button id="restart-btn">Restart</button>
+                    <button id="guess-btn">Guess</button>
+                </div>
+                <div id="message">
+                    Try guessing a number between 1 and 100.🤐
+                </div>
+            </div>
+        </main>
+        <script type="module" src="./src/index.js"></script>
     </body>
 </html>
